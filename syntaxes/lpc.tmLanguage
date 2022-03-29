@@ -57,6 +57,10 @@
 				<string>#parens</string>
 			</dict>
 			<dict>
+        <key>include</key>
+        <string>#closure</string>
+      </dict>
+			<dict>
 				<key>include</key>
 				<string>#comments</string>
 			</dict>
@@ -301,6 +305,10 @@
 						<string>#parens</string>
 					</dict>
 					<dict>
+            <key>include</key>
+            <string>#closure</string>
+          </dict>
+					<dict>
 						<key>match</key>
 						<string>\bconstant\b</string>
 						<key>name</key>
@@ -468,6 +476,19 @@
 					</dict>
 				</array>
 			</dict>
+			<dict>
+      	<key>begin</key>
+        <string>\#'</string>
+        <key>name</key>
+        <string>meta.closure.lpc</string>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>include</key>
+            <string>$base</string>
+          </dict>
+        </array>
+      </dict>
 			<key>pragma-mark</key>
 			<dict>
 				<key>captures</key>
